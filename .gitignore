@@ -10,15 +10,16 @@
 !*.md
 !.HA_VERSION
 !docs
-!secrets.yaml.tmpl
 
 #whitelist yaml files
 !*.yaml
+!*.tmpl
 
 #allow home assistant content
 !/packages/
 !packages/**/
 !/ssl/
+!/ssl/**
 !/themes/
 !themes/**
 !/www/images/
