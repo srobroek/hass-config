@@ -5,16 +5,25 @@
 *
 
 #Whitelist system files
-!.gitignore
-!.github
+!/.gitignore
+!/.github
 !*.md
 !.HA_VERSION
+!docs
+
+#whitelist yaml files
+!*.yaml
 
 #allow home assistant content
-!/packages/**
+!/packages/
+!packages/**/
 !/ssl/
-!/themes/**
+!/themes/
+!themes/**
+!/www/images/
 !/www/images/**
+!/docs/
+!docs/**
 ### HomeAssistant ###
 # Files with personal details
 *.crt
