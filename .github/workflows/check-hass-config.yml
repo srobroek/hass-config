@@ -20,8 +20,8 @@ jobs:
     - name: move secrets
       run: mv secrets.yaml.tmpl secrets.yaml
     - name: create stub private key
-      run: touch /config/ssl/privkey.pem
+      run: mv ssl/privkey.pem.tmpl ssl/privkey.pem
     - name: create stub ssl chain
-      run: touch /config/ssl/fullchain.pem
+      run: mv ssl/fullchain.pem.tmpl ssl/fullchain.pem
     - name: Run Config Check
       uses: ludeeus/action-ha-config-check@master
