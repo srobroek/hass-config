@@ -1,0 +1,217 @@
+rfxtrx:
+  device: !secret rfxtrx_device
+
+cover:
+  - platform: rfxtrx
+    automatic_add: False
+    devices:
+      071a000000000101:
+        name: office rfxtrx
+      071a000000000102:
+        name: bedroom rfxtrx
+      071a000000000103:
+        name: living l1 rfxtrx
+      071a000000000203: 
+        name: living l2 rfxtrx
+      071a000000000303:
+        name: living l3 rfxtrx
+      071a000000000403:
+        name: living l4 rfxtrx
+      071a000000000503:
+        name: living l5 rfxtrx
+      071a000000000603:
+        name: living r1 rfxtrx
+      071a000000000703:
+        name: living r2 rfxtrx
+      071a000000001003:
+        name: living all rfxtrx
+      071a000000001103:
+        name: living left rfxtrx
+      071a000000001203:
+        name: living right rfxtrx
+
+  - platform: template
+    covers:
+      office:
+        friendly_name: "Office Curtains"
+        open_cover:
+          service: cover.open_cover
+          data:
+            entity_id: cover.office_rfxtrx
+        close_cover:
+          service: cover.close_cover
+          data:
+            entity_id: cover.office_rfxtrx
+        stop_cover:
+          service: cover.stop_cover
+          data:
+            entity_id: cover.office_rfxtrx
+
+      bedroom:
+        friendly_name: "Bedroom Curtains"
+        open_cover:
+          service: cover.open_cover
+          data:
+            entity_id: cover.bedroom_rfxtrx
+        close_cover:
+          service: cover.close_cover
+          data:
+            entity_id: cover.bedroom_rfxtrx
+        stop_cover:
+          service: cover.stop_cover
+          data:
+            entity_id: cover.bedroom_rfxtrx
+
+
+      living_l1:
+        friendly_name: "Living room Window 1"
+        open_cover:
+          service: cover.open_cover
+          data:
+            entity_id: cover.living_l1_rfxtrx
+        close_cover:
+          service: cover.close_cover
+          data:
+            entity_id: cover.living_l1_rfxtrx
+        stop_cover:
+          service: cover.stop_cover
+          data:
+            entity_id: cover.living_l1_rfxtrx
+
+
+      living_l2:
+        friendly_name: "Living room Window 2"
+        open_cover:
+          service: cover.open_cover
+          data:
+            entity_id: cover.living_l2_rfxtrx
+        close_cover:
+          service: cover.close_cover
+          data:
+            entity_id: cover.living_l2_rfxtrx
+        stop_cover:
+          service: cover.stop_cover
+          data:
+            entity_id: cover.living_l2_rfxtrx
+
+
+            
+      living_l3:
+        friendly_name: "Living room Window 3"
+        open_cover:
+          service: cover.open_cover
+          data:
+            entity_id: cover.living_l3_rfxtrx
+        close_cover:
+          service: cover.close_cover
+          data:
+            entity_id: cover.living_l3_rfxtrx
+        stop_cover:
+          service: cover.stop_cover
+          data:
+            entity_id: cover.living_l3_rfxtrx
+
+            
+      living_l4:
+        friendly_name: "Living room Window 4"
+        open_cover:
+          service: cover.open_cover
+          data:
+            entity_id: cover.living_l4_rfxtrx
+        close_cover:
+          service: cover.close_cover
+          data:
+            entity_id: cover.living_l4_rfxtrx
+        stop_cover:
+          service: cover.stop_cover
+          data:
+            entity_id: cover.living_l4_rfxtrx
+
+
+            
+      living_l5:
+        friendly_name: "Living room Window 5"
+        open_cover:
+          service: cover.open_cover
+          data:
+            entity_id: cover.living_l5_rfxtrx
+        close_cover:
+          service: cover.close_cover
+          data:
+            entity_id: cover.living_l5_rfxtrx
+        stop_cover:
+          service: cover.stop_cover
+          data:
+            entity_id: cover.living_l5_rfxtrx
+            
+      living_r1:
+        friendly_name: "Living room Window 6"
+        open_cover:
+          service: cover.open_cover
+          data:
+            entity_id: cover.living_r1_rfxtrx
+        close_cover:
+          service: cover.close_cover
+          data:
+            entity_id: cover.living_r1_rfxtrx
+        stop_cover:
+          service: cover.stop_cover
+          data:
+            entity_id: cover.living_r1_rfxtrx
+
+
+      living_r2:
+        friendly_name: "Living room Window 7"
+        open_cover:
+          service: cover.open_cover
+          data:
+            entity_id: cover.living_r2_rfxtrx
+        close_cover:
+          service: cover.close_cover
+          data:
+            entity_id: cover.living_r2_rfxtrx
+        stop_cover:
+          service: cover.stop_cover
+          data:
+            entity_id: cover.living_r2_rfxtrx
+
+    - platform: group
+    name: "Bedroom Curtains"
+    entities:
+        - cover.bedroom
+
+  - platform: group
+    name: "Office Curtains"
+    entities:
+        - cover.office
+      
+  - platform: group
+    name: "Balcony door Curtains"
+    entities: 
+        - cover.living_l4
+        
+                
+  - platform: group
+    name: "Living Room Curtains"
+    entities:
+        - cover.living_l1
+        - cover.living_l2
+        - cover.living_l3
+        - cover.living_l4
+        - cover.living_l5
+        - cover.living_r1
+        - cover.living_r2
+
+  - platform: group
+    name: "Living Room Left Curtains"
+    entities:
+        - cover.living_l1
+        - cover.living_l2
+        - cover.living_l3
+        - cover.living_l4
+        - cover.living_l5
+  - platform: group
+    name: "Living Room Right Curtains"
+    entities:
+        - cover.living_r1
+        - cover.living_r2

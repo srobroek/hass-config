@@ -1,0 +1,5 @@
+remote:
+  - platform: harmony
+    name: Harmony remote
+    host: !secret harmony_host
+
