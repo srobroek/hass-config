@@ -175,7 +175,7 @@ cover:
           data:
             entity_id: cover.living_r2_rfxtrx
 
-    - platform: group
+  - platform: group
     name: "Bedroom Curtains"
     entities:
         - cover.bedroom
