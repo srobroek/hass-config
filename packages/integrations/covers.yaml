@@ -189,8 +189,7 @@ cover:
     name: "Balcony door Curtains"
     entities: 
         - cover.living_l4
-        
-                
+                      
   - platform: group
     name: "Living Room Curtains"
     entities:

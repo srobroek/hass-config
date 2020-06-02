@@ -8,3 +8,49 @@ fan:
     host: !secret mi_air_3h_bedroom_host
     token: !secret mi_air_3h_bedroom_token
     name: Mi Air Purifier 3H - Bedroom
+
+sensor:
+- platform: template
+  sensors:
+    mi_air_purifier_temp_bedroom:
+      friendly_name: "Temperature"
+      value_template: "{{ state_attr('fan.mi_air_purifier_3h_bedroom', 'temperature') }}"
+      unit_of_measurement: "°C"
+      device_class: "temperature"
+    mi_air_purifier_humidity_bedroom:
+      friendly_name: "Humidity"
+      value_template: "{{ state_attr('fan.mi_air_purifier_3h_bedroom', 'humidity') }}"
+      unit_of_measurement: "%"
+      device_class: "humidity"
+    mi_air_purifier_air_quality_pm25_bedroom:
+      friendly_name: "Air quality (AQI) PM2.5"
+      value_template: "{{ state_attr('fan.mi_air_purifier_3h_bedroom', 'aqi') }}"
+      unit_of_measurement: "μg/m³"
+      icon_template: "mdi:weather-fog"
+    mi_air_purifier_avg_air_quality_pm25_bedroom:
+      friendly_name: "Average air quality (AvgAQI) PM2.5"
+      value_template: "{{ state_attr('fan.mi_air_purifier_3h_bedroom', 'average_aqi') }}"
+      unit_of_measurement: "μg/m³"
+      icon_template: "mdi:weather-hazy"
+
+
+    mi_air_purifier_temp_livingroom:
+      friendly_name: "Temperature"
+      value_template: "{{ state_attr('fan.mi_air_purifier_3h_livingroom', 'temperature') }}"
+      unit_of_measurement: "°C"
+      device_class: "temperature"
+    mi_air_purifier_humidity_livingroom:
+      friendly_name: "Humidity"
+      value_template: "{{ state_attr('fan.mi_air_purifier_3h_livingroom', 'humidity') }}"
+      unit_of_measurement: "%"
+      device_class: "humidity"
+    mi_air_purifier_air_quality_pm25_livingroom:
+      friendly_name: "Air quality (AQI) PM2.5"
+      value_template: "{{ state_attr('fan.mi_air_purifier_3h_livingroom', 'aqi') }}"
+      unit_of_measurement: "μg/m³"
+      icon_template: "mdi:weather-fog"
+    mi_air_purifier_avg_air_quality_pm25_livingroom:
+      friendly_name: "Average air quality (AvgAQI) PM2.5"
+      value_template: "{{ state_attr('fan.mi_air_purifier_3h_livingroom', 'average_aqi') }}"
+      unit_of_measurement: "μg/m³"
+      icon_template: "mdi:weather-hazy"
