@@ -18,7 +18,7 @@ person:
 #set HTTP config
 http:
   ssl_certificate: !secret http_fullchain
-  ssl_keys: !secret http_privkey
+  ssl_key: !secret http_privkey
   cors_allowed_origins:
     - https://cast.home-assistant.io
 

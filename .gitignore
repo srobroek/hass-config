@@ -10,6 +10,7 @@
 !*.md
 !.HA_VERSION
 !docs
+!secrets.yaml.tmpl
 
 #whitelist yaml files
 !*.yaml
