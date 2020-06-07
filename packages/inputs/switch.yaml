@@ -1,0 +1,26 @@
+input_boolean:
+  googlehome_nightroutine:
+    name: Night routine trigger
+    initial: off
+    view: no
+
+  googlehome_morningroutine:
+    name: Morning routine trigger
+    initial: off
+    view: no
+
+  googlehome_homeroutine:
+    name: Home routine trigger
+    initial: off
+    view: no
+
+group:
+  googlehome_routines:
+    name: group name
+    view: no
+    entities:
+      - googlehome_nightroutine:
+      - googlehome_morningroutine:
+      - googlehome_homeroutine:
+
+
