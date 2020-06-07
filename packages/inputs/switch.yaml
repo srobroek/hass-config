@@ -14,12 +14,3 @@ input_boolean:
     initial: off
     view: no
 
-group:
-  googlehome_routines:
-    name: group name
-    entities:
-      - googlehome_nightroutine:
-      - googlehome_morningroutine:
-      - googlehome_homeroutine:
-
-
