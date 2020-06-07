@@ -13,4 +13,5 @@ input_boolean:
     name: Home routine trigger
     initial: off
 
-
+  donotdisturb:
+    name: Do not disturb

@@ -1,6 +1,6 @@
 group:
   googlehome_routines:
-    name: group name
+    name: Google home routines meta group
     entities:
       - input_boolean.googlehome_nightroutine
       - input_boolean.googlehome_morningroutine
