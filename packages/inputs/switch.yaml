@@ -17,7 +17,6 @@ input_boolean:
 group:
   googlehome_routines:
     name: group name
-    view: no
     entities:
       - googlehome_nightroutine:
       - googlehome_morningroutine:
