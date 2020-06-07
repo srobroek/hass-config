@@ -2,7 +2,7 @@ group:
   googlehome_routines:
     name: group name
     entities:
-      - googlehome_nightroutine:
-      - googlehome_morningroutine:
-      - googlehome_homeroutine:
+      - input_boolean.googlehome_nightroutine:
+      - input_boolean.googlehome_morningroutine:
+      - input_boolean.googlehome_homeroutine:
 
