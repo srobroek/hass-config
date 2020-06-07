@@ -2,15 +2,15 @@ input_boolean:
   googlehome_nightroutine:
     name: Night routine trigger
     initial: off
-    view: no
+
 
   googlehome_morningroutine:
     name: Morning routine trigger
     initial: off
-    view: no
+
 
   googlehome_homeroutine:
     name: Home routine trigger
     initial: off
-    view: no
+
 
