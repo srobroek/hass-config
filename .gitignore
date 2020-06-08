@@ -26,8 +26,9 @@
 !/www/images/**
 !/docs/
 !docs/**
-.storage/*
-!storage/lovelace
+!/.storage/
+!/.storage/lovelace
+!.storage/lovelace_resources
 ### HomeAssistant ###
 # Files with personal details
 *.crt
