@@ -1,0 +1,18 @@
+{
+    "data": {
+        "items": [
+            {
+                "id": "4184a08ec39249f5a1bc5a2442dc4fe5",
+                "type": "module",
+                "url": "/hacsfiles/vacuum-card/vacuum-card.js"
+            },
+            {
+                "id": "a0a3ae4f123c4ce88667521defe8afa1",
+                "type": "module",
+                "url": "/hacsfiles/lovelace-layout-card/layout-card.js"
+            }
+        ]
+    },
+    "key": "lovelace_resources",
+    "version": 1
+}

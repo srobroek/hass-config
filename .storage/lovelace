@@ -1,0 +1,15 @@
+{
+    "data": {
+        "config": {
+            "views": [
+                {
+                    "badges": [],
+                    "cards": [],
+                    "panel": true
+                }
+            ]
+        }
+    },
+    "key": "lovelace",
+    "version": 1
+}
