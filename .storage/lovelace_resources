@@ -10,6 +10,11 @@
                 "id": "a0a3ae4f123c4ce88667521defe8afa1",
                 "type": "module",
                 "url": "/hacsfiles/lovelace-layout-card/layout-card.js"
+            },
+            {
+                "id": "59fe261abf6f44589834470cc047beba",
+                "type": "module",
+                "url": "/hacsfiles/light-entity-card/light-entity-card.js"
             }
         ]
     },

@@ -4,7 +4,135 @@
             "views": [
                 {
                     "badges": [],
-                    "cards": [],
+                    "cards": [
+                        {
+                            "cards": [
+                                {
+                                    "entity": "light.bedroom",
+                                    "full_width_sliders": true,
+                                    "group": true,
+                                    "header": "Bedroom",
+                                    "persist_features": true,
+                                    "smooth_color_wheel": true,
+                                    "type": "custom:light-entity-card"
+                                },
+                                {
+                                    "entity": "light.reading_corner",
+                                    "full_width_sliders": true,
+                                    "group": true,
+                                    "header": "Reading Corner",
+                                    "persist_features": true,
+                                    "smooth_color_wheel": true,
+                                    "type": "custom:light-entity-card"
+                                },
+                                {
+                                    "entity": "light.bookcase",
+                                    "full_width_sliders": true,
+                                    "group": true,
+                                    "header": "Bookcase",
+                                    "persist_features": true,
+                                    "smooth_color_wheel": true,
+                                    "type": "custom:light-entity-card"
+                                },
+                                {
+                                    "entity": "light.living_room",
+                                    "full_width_sliders": true,
+                                    "group": true,
+                                    "header": "Living Room",
+                                    "persist_features": true,
+                                    "smooth_color_wheel": true,
+                                    "type": "custom:light-entity-card"
+                                },
+                                "break",
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "cover.office_curtains"
+                                        },
+                                        {
+                                            "entity": "cover.bedroom_curtains"
+                                        },
+                                        {
+                                            "entity": "cover.living_room_curtains"
+                                        },
+                                        {
+                                            "entity": "cover.living_room_left_curtains"
+                                        },
+                                        {
+                                            "entity": "cover.living_room_right_curtains"
+                                        },
+                                        {
+                                            "entity": "cover.balcony_door_curtains"
+                                        }
+                                    ],
+                                    "show_header_toggle": false,
+                                    "title": "Blinds",
+                                    "type": "entities"
+                                },
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "fan.mi_air_purifier_3h_bedroom",
+                                            "name": "Bedroom",
+                                            "tap_action": {
+                                                "action": "call-service",
+                                                "service": "fan.toggle",
+                                                "service_data": {
+                                                    "entity_id": "fan.mi_air_purifier_3h_bedroom"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "entity": "sensor.mi_air_purifier_temp_bedroom"
+                                        },
+                                        {
+                                            "entity": "sensor.mi_air_purifier_humidity_bedroom"
+                                        },
+                                        {
+                                            "entity": "sensor.mi_air_purifier_air_quality_pm25_bedroom"
+                                        },
+                                        {
+                                            "entity": "sensor.mi_air_purifier_avg_air_quality_pm25_bedroom"
+                                        },
+                                        {
+                                            "entity": "fan.mi_air_purifier_3h_livingroom",
+                                            "name": "Living Room",
+                                            "tap_action": {
+                                                "action": "call-service",
+                                                "service": "fan.toggle",
+                                                "service_data": {
+                                                    "entity_id": "fan.mi_air_purifier_3h_livingroom"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "entity": "sensor.mi_air_purifier_temp_livingroom"
+                                        },
+                                        {
+                                            "entity": "sensor.mi_air_purifier_humidity_livingroom"
+                                        },
+                                        {
+                                            "entity": "sensor.mi_air_purifier_air_quality_pm25_livingroom"
+                                        },
+                                        {
+                                            "entity": "sensor.mi_air_purifier_avg_air_quality_pm25_livingroom"
+                                        }
+                                    ],
+                                    "show_name": true,
+                                    "show_state": true,
+                                    "type": "glance"
+                                },
+                                {
+                                    "compact_view": false,
+                                    "entity": "vacuum.rob",
+                                    "image": "default",
+                                    "type": "custom:vacuum-card"
+                                }
+                            ],
+                            "layout": "vertical",
+                            "type": "custom:layout-card"
+                        }
+                    ],
                     "panel": true
                 }
             ]
