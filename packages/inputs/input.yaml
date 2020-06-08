@@ -1,3 +1,5 @@
+
+## Google home triggers
 input_boolean:
   googlehome_nightroutine:
     name: Night routine trigger
@@ -13,5 +15,7 @@ input_boolean:
     name: Home routine trigger
     initial: off
 
+
+## Global DND trigger
   donotdisturb:
     name: Do not disturb
