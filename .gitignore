@@ -14,6 +14,7 @@
 !*.yaml
 !*.tmpl
 
+
 #allow home assistant content
 !/packages/
 !packages/**/
@@ -25,6 +26,8 @@
 !/www/images/**
 !/docs/
 !docs/**
+.storage/*
+!storage/lovelace
 ### HomeAssistant ###
 # Files with personal details
 *.crt
