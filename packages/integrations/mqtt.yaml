@@ -1,0 +1,5 @@
+mqtt:
+  broker: hass.vxsan.com
+  username: !secret mqtt_user
+  password: !secret mqtt_pass
+  port: 8883
