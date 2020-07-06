@@ -47,26 +47,39 @@
                                 {
                                     "entities": [
                                         {
-                                            "entity": "cover.office_curtains"
+                                            "entity": "cover.office_curtain_group"
                                         },
                                         {
-                                            "entity": "cover.bedroom_curtains"
+                                            "entity": "cover.bedroom_curtain_group"
                                         },
                                         {
-                                            "entity": "cover.living_room_curtains"
+                                            "entity": "cover.living_room_curtain_group"
                                         },
                                         {
-                                            "entity": "cover.living_room_left_curtains"
+                                            "entity": "cover.living_room_left_curtain_group"
                                         },
                                         {
-                                            "entity": "cover.living_room_right_curtains"
+                                            "entity": "cover.living_room_right_curtain_group"
                                         },
                                         {
-                                            "entity": "cover.balcony_door_curtains"
+                                            "entity": "cover.balcony_door_curtain_group"
                                         }
                                     ],
                                     "show_header_toggle": false,
                                     "title": "Blinds",
+                                    "type": "entities"
+                                },
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "switch.0x680ae2fffe71afaf_switch_left"
+                                        },
+                                        {
+                                            "entity": "switch.0x680ae2fffe71afaf_switch_right"
+                                        }
+                                    ],
+                                    "show_header_toggle": false,
+                                    "title": "Light Switches",
                                     "type": "entities"
                                 },
                                 {
@@ -134,6 +147,10 @@
                         }
                     ],
                     "panel": true
+                },
+                {
+                    "badges": [],
+                    "cards": []
                 }
             ]
         }
