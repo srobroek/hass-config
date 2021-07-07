@@ -1,0 +1,77 @@
+group:
+  officelights:
+    name: Office Lights
+    entities:
+      - switch.0x680ae2fffe71afaf_switch_left
+      - switch.0x680ae2fffe71afaf_switch_right
+      
+  officebathroomlights:
+    name: Office Bathroom Lights
+    entities:
+      - switch.0x680ae2fffe71b1a2_switch_left
+      - switch.0x680ae2fffe71b1a2_switch_right
+    
+      
+  hallwaylights:
+    name: Hallway Lights  
+    entities:
+      - switch.0x680ae2fffe01d07d_switch_left
+      - switch.0x680ae2fffe01d07d_switch_right
+      
+      
+  mainbathroomlights:
+    name: Main Bathroom Lights  
+    entities:
+      - switch.0x680ae2fffe71b441_switch_left
+      - switch.0x680ae2fffe71b441_switch_right
+      
+  masterbathroomlights:
+    name: Master Bathroom Lights
+    entities:
+      - switch.0x680ae2fffe71b172_switch_left
+      - switch.0x680ae2fffe71b172_switch_right
+      
+
+  bedroomlights:
+    name: Bedroom Lights
+    entities:
+      - switch.0xec1bbdfffe8034f6_switch_left
+      - switch.0xec1bbdfffe8034f6_switch_right
+      
+  bedroomlighhts:
+    name: Bedroom Lights
+    entities:
+      - switch.0xec1bbdfffe8034f6_switch_left
+      - switch.0xec1bbdfffe8034f6_switch_right
+
+  kitchenlights:
+    name: Kitchen Lights
+    entities:
+      - switch.0x680ae2fffe71affd_switch_left      
+
+  livingroomlights:
+    name: Living Room Lights
+    entities:
+      - switch.0x680ae2fffe71b181_switch_left
+      - switch.0x680ae2fffe71b3be_switch_center
+      - switch.0x680ae2fffe71b3be_switch_right
+      - switch.0x680ae2fffe71b3be_switch_middle
+      - switch.0x680ae2fffe71b3be_switch_left
+
+  alllights:
+    name: All Lights
+    entities:
+      - group.livingroomlights
+      - group.kitchenlights
+      - group.bedroomlights
+      - group.masterbathroomlights
+      - group.mainbathroomlights
+      - group.hallwaylights
+      - group.officebathroomlights
+      - group.officelights
+
+
+           
+
+      
+                      

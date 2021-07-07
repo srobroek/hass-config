@@ -1,19 +1,172 @@
 light:
-- platform: group
-  name: Living room
-  entities:
-  - light.reading_corner
-  - light.bookcase
-- platform: group
-  name: Bedroom
-  entities:
-  - light.hue_color_lamp_1
-- platform: group
-  name: Reading Corner
-  entities:
-  - light.hue_color_lamp_3
-  - light.hue_color_lamp_4
-- platform: group
-  name: Bookcase
-  entities:
-  - light.dimmable_light_1
+
+  - platform: switch
+    name: Office Hallway
+    entity_id: switch.0x680ae2fffe71afaf_switch_left
+
+  - platform: switch
+    name: Office Main
+    entity_id: switch.0x680ae2fffe71afaf_switch_right
+
+  - platform: switch
+    name: Office Bathroom Main
+    entity_id: switch.0x680ae2fffe71b1a2_switch_left
+    
+  - platform: switch
+    name: Office Bathroom underlight
+    entity_id: switch.0x680ae2fffe71b1a2_switch_right
+    
+  - platform: switch
+    name: Hallway Living room
+    entity_id: switch.0x680ae2fffe01d07d_switch_left
+    
+  - platform: switch
+    name: Hallway Bedroom
+    entity_id: switch.0x680ae2fffe01d07d_switch_right
+    
+  - platform: switch
+    name: Guest Bathroom underlight
+    entity_id: switch.0x680ae2fffe71b441_switch_left
+    
+  - platform: switch
+    name: Guest bathroom main
+    entity_id: switch.0x680ae2fffe71b441_switch_right
+    
+  - platform: switch
+    name: Master bathroom main
+    entity_id: switch.0x680ae2fffe71b172_switch_left
+    
+  - platform: switch
+    name: Master bathroom underlight
+    entity_id: switch.0x680ae2fffe71b172_switch_right
+    
+  - platform: switch
+    name: Bedroom entrance
+    entity_id: switch.0xec1bbdfffe8034f6_switch_left
+    
+  - platform: switch
+    name: Bedroom main
+    entity_id: switch.0xec1bbdfffe8034f6_switch_right
+    
+  - platform: switch
+    name: Livingroom entrance
+    entity_id: switch.0x680ae2fffe71affd_switch_left
+    
+  - platform: switch
+    name: Livingroom underlight
+    entity_id: switch.0x680ae2fffe71b181_switch_left
+    
+  - platform: switch
+    name: Livingroom front
+    entity_id: switch.0x680ae2fffe71b3be_switch_center
+    
+  - platform: switch
+    name: Livingroom middle
+    entity_id: switch.0x680ae2fffe71b3be_switch_right
+
+  - platform: switch
+    name: Livingroom back
+    entity_id: switch.0x680ae2fffe71b3be_switch_left
+
+  - platform: switch
+    name: Kitchen Hallway
+    entity_id: switch.0x680ae2fffe71affd_switch_left
+
+
+
+  - platform: group
+    name: bedroom
+    entities:
+      - light.hue_color_lamp_1
+      
+      
+      
+     
+  - platform: group
+    name: Reading Corner
+    entities:
+      - light.hue_color_lamp_3
+      - light.hue_color_lamp_4
+  - platform: group
+    name: Bookcase
+    entities:
+    - light.dimmable_light_1    
+
+  - platform: group
+    name: livingroom_all
+    entities:
+      - light.reading_corner
+      - light.bookcase
+      - light.livingroom_back
+      - light.livingroom_entrance
+      - light.livingroom_front
+      - light.livingroom_middle
+      - light.livingroom_underlight
+      - light.hallway_living_room
+      
+
+
+  - platform: group
+    name: office_all
+    entities:
+      - light.office_hallway
+      - light.office_main
+
+  - platform: group
+    name: bedroom_all
+    entities:
+      - light.bedroom_main
+      - light.bedroom_entrance
+      - light.bedroom
+
+
+
+
+  - platform: group
+    name: bathroom_master_all
+    entities:
+      - light.master_bathroom_main
+      - light.master_bathroom_underlight
+
+  - platform: group
+    name: bathroom_office_all
+    entities:
+      - light.office_bathroom_main
+      - light.office_bathroom_underlight
+      
+
+      
+  - platform: group
+    name: bathroom_guest_all
+    entities:
+      - light.guest_bathroom_main
+      - light.guest_bathroom_underlight      
+      
+  - platform: group
+    name: kitchen_all
+    entities: 
+      - light.kitchen_hallway      
+      
+  - platform: group
+    name: hallway_all
+    entities: 
+      - light.hallway_living_room
+      - light.hallway_bedroom
+
+
+  - platform: group
+    name: all
+    entities: 
+      - light.livingroom_all
+      - light.bedroom_all
+      - light.kitchen_all
+      - light.office_all
+      - light.bathroom_master_all
+      - light.bathroom_office_all
+      - light.bathroom_guest_all
+      - light.hallway_all
+      
+           
+
+      
+                      

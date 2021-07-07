@@ -2,8 +2,11 @@ automation:
 - alias: "System - Let's Encrypt Renewal"
   trigger:
     platform: time
-    at: '01:25:00'
+    at: '04:25:00'
   action:
-  - service: hassio.addon_restart
+  - service: hassio.addon_start
     data:
       addon: core_letsencrypt
+  - service: hassio.addon_restart
+    data:
+      addon: core_nginx_proxy

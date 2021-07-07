@@ -1,48 +1,46 @@
 rfxtrx:
-  device: !secret rfxtrx_device
-
-cover:
-  - platform: rfxtrx
-    automatic_add: False
+    device: !secret rfxtrx_device
+    automatic_add: true
     devices:
       071a000000000101:
-        name: office
+#        name: office
         fire_event: true
         
       071a000000000102:
-        name: bedroom
+#        name: bedroom
         fire_event: true
       071a000000000103:
-        name: living l1
+#        name: living l1
         fire_event: true
       071a000000000203: 
-        name: living l2
+#        name: living l2
         fire_event: true
       071a000000000303:
-        name: living l3
+#        name: living l3
         fire_event: true
       071a000000000403:
-        name: living l4
+#        name: living l4
         fire_event: true
       071a000000000503:
-        name: living l5
+#        name: living l5
         fire_event: true
       071a000000000603:
-        name: living r1
+#        name: living r1
         fire_event: true
       071a000000000703:
-        name: living r2
+#        name: living r2
         fire_event: true
       071a000000001003:
-        name: living all
+#        name: living all
         fire_event: true
       071a000000001103:
-        name: living left
+#        name: living left
         fire_event: true
       071a000000001203:
-        name: living right
+#        name: living right
         fire_event: true
-        
+
+cover:       
 
   # - platform: template
   #   covers:
@@ -193,40 +191,29 @@ cover:
     name: "Bedroom Curtain Group"
     
     entities:
-        - cover.bedroom
+        - cover.cover_bedroom
 
   - platform: group
     name: "Office Curtain Group"
     entities:
-        - cover.office
+        - cover.cover_office
       
   - platform: group
     name: "Balcony door Curtain Group"
     entities: 
-        - cover.living_l4
+        - cover.cover_living_l4
                       
   - platform: group
     name: "Living Room Curtain Group"
     entities:
-        - cover.living_l1
-        - cover.living_l2
-        - cover.living_l3
-        - cover.living_l4
-        - cover.living_l5
-        - cover.living_r1
-        - cover.living_r2
+        - cover.cover_living_all
 
   - platform: group
     name: "Living Room Left Curtain Group"
     entities:
-        - cover.living_l1
-        - cover.living_l2
-        - cover.living_l3
-        - cover.living_l4
-        - cover.living_l5
+        - cover.cover_living_left
   - platform: group
     name: "Living Room Right Curtain Group"
     entities:
-        - cover.living_r1
-        - cover.living_r2
+        - cover.cover_living_right
  

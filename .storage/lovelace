@@ -1,87 +1,181 @@
 {
+    "version": 1,
+    "key": "lovelace",
     "data": {
         "config": {
             "views": [
                 {
+                    "icon": "mdi:lightbulb",
+                    "panel": false,
+                    "type": "custom:grid-layout",
                     "badges": [],
                     "cards": [
                         {
                             "cards": [
                                 {
-                                    "entity": "light.bedroom",
+                                    "type": "button",
+                                    "tap_action": {
+                                        "action": "call-service",
+                                        "service": "light.turn_off",
+                                        "service_data": {},
+                                        "target": {
+                                            "entity_id": "light.all"
+                                        }
+                                    },
+                                    "icon": "hass:lightbulb",
+                                    "show_state": true,
+                                    "name": "All Lights",
+                                    "entity": "light.all"
+                                },
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "group.officelights",
+                                            "type": "custom:binary-control-button-row"
+                                        },
+                                        {
+                                            "entity": "switch.0x680ae2fffe71afaf_switch_right",
+                                            "type": "custom:binary-control-button-row"
+                                        },
+                                        {
+                                            "entity": "switch.0x680ae2fffe71afaf_switch_left",
+                                            "type": "custom:binary-control-button-row"
+                                        }
+                                    ],
+                                    "show_header_toggle": false,
+                                    "type": "entities"
+                                },
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "group.officebathroomlights",
+                                            "type": "custom:binary-control-button-row"
+                                        },
+                                        {
+                                            "entity": "switch.0x680ae2fffe71b1a2_switch_left",
+                                            "type": "custom:binary-control-button-row"
+                                        },
+                                        {
+                                            "entity": "switch.0x680ae2fffe71b1a2_switch_right",
+                                            "type": "custom:binary-control-button-row"
+                                        }
+                                    ],
+                                    "show_header_toggle": false,
+                                    "type": "entities"
+                                },
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "group.mainbathroomlights",
+                                            "type": "custom:binary-control-button-row"
+                                        },
+                                        {
+                                            "entity": "switch.0x680ae2fffe71b441_switch_right",
+                                            "type": "custom:binary-control-button-row"
+                                        },
+                                        {
+                                            "entity": "switch.0x680ae2fffe71b441_switch_left",
+                                            "type": "custom:binary-control-button-row"
+                                        }
+                                    ],
+                                    "show_header_toggle": false,
+                                    "type": "entities"
+                                },
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "group.masterbathroomlights",
+                                            "type": "custom:binary-control-button-row"
+                                        },
+                                        {
+                                            "entity": "switch.0x680ae2fffe71b172_switch_left",
+                                            "type": "custom:binary-control-button-row"
+                                        },
+                                        {
+                                            "entity": "switch.0x680ae2fffe71b172_switch_right",
+                                            "type": "custom:binary-control-button-row"
+                                        }
+                                    ],
+                                    "show_header_toggle": false,
+                                    "type": "entities"
+                                },
+                                {
+                                    "shorten_cards": false,
+                                    "consolidate_entities": false,
+                                    "color_wheel": true,
+                                    "persist_features": true,
+                                    "brightness": true,
+                                    "color_temp": true,
+                                    "white_value": true,
+                                    "color_picker": true,
+                                    "smooth_color_wheel": true,
+                                    "hide_header": false,
+                                    "child_card": false,
+                                    "show_slider_percent": false,
                                     "full_width_sliders": true,
+                                    "brightness_icon": "weather-sunny",
+                                    "white_icon": "file-word-box",
+                                    "temperature_icon": "thermometer",
+                                    "entity": "light.bedroom",
                                     "group": true,
                                     "header": "Bedroom",
-                                    "persist_features": true,
-                                    "smooth_color_wheel": true,
                                     "type": "custom:light-entity-card"
                                 },
                                 {
+                                    "shorten_cards": false,
+                                    "consolidate_entities": true,
+                                    "color_wheel": true,
+                                    "persist_features": true,
+                                    "brightness": true,
+                                    "color_temp": true,
+                                    "white_value": true,
+                                    "color_picker": true,
+                                    "smooth_color_wheel": true,
+                                    "hide_header": false,
+                                    "child_card": false,
+                                    "show_slider_percent": false,
+                                    "full_width_sliders": true,
+                                    "brightness_icon": "weather-sunny",
+                                    "white_icon": "file-word-box",
+                                    "temperature_icon": "thermometer",
                                     "entity": "light.reading_corner",
-                                    "full_width_sliders": true,
-                                    "group": true,
-                                    "header": "Reading Corner",
-                                    "persist_features": true,
-                                    "smooth_color_wheel": true,
+                                    "group": false,
+                                    "header": null,
                                     "type": "custom:light-entity-card"
                                 },
                                 {
-                                    "entity": "light.bookcase",
+                                    "shorten_cards": false,
+                                    "consolidate_entities": false,
+                                    "color_wheel": true,
+                                    "persist_features": true,
+                                    "brightness": true,
+                                    "color_temp": true,
+                                    "white_value": true,
+                                    "color_picker": true,
+                                    "smooth_color_wheel": true,
+                                    "hide_header": false,
+                                    "child_card": false,
+                                    "show_slider_percent": false,
                                     "full_width_sliders": true,
+                                    "brightness_icon": "weather-sunny",
+                                    "white_icon": "file-word-box",
+                                    "temperature_icon": "thermometer",
+                                    "entity": "light.bookcase",
                                     "group": true,
                                     "header": "Bookcase",
-                                    "persist_features": true,
-                                    "smooth_color_wheel": true,
                                     "type": "custom:light-entity-card"
-                                },
-                                {
-                                    "entity": "light.living_room",
-                                    "full_width_sliders": true,
-                                    "group": true,
-                                    "header": "Living Room",
-                                    "persist_features": true,
-                                    "smooth_color_wheel": true,
-                                    "type": "custom:light-entity-card"
-                                },
-                                "break",
-                                {
-                                    "entities": [
-                                        {
-                                            "entity": "cover.office_curtain_group"
-                                        },
-                                        {
-                                            "entity": "cover.bedroom_curtain_group"
-                                        },
-                                        {
-                                            "entity": "cover.living_room_curtain_group"
-                                        },
-                                        {
-                                            "entity": "cover.living_room_left_curtain_group"
-                                        },
-                                        {
-                                            "entity": "cover.living_room_right_curtain_group"
-                                        },
-                                        {
-                                            "entity": "cover.balcony_door_curtain_group"
-                                        }
-                                    ],
-                                    "show_header_toggle": false,
-                                    "title": "Blinds",
-                                    "type": "entities"
-                                },
-                                {
-                                    "entities": [
-                                        {
-                                            "entity": "switch.0x680ae2fffe71afaf_switch_left"
-                                        },
-                                        {
-                                            "entity": "switch.0x680ae2fffe71afaf_switch_right"
-                                        }
-                                    ],
-                                    "show_header_toggle": false,
-                                    "title": "Light Switches",
-                                    "type": "entities"
-                                },
+                                }
+                            ],
+                            "type": "custom:layout-card",
+                            "layout_type": "masonry"
+                        }
+                    ]
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "cards": [
                                 {
                                     "entities": [
                                         {
@@ -134,7 +228,229 @@
                                     "show_name": true,
                                     "show_state": true,
                                     "type": "glance"
+                                }
+                            ],
+                            "layout": "vertical",
+                            "type": "custom:layout-card"
+                        }
+                    ],
+                    "icon": "mdi:fan",
+                    "panel": true
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "cards": [
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "cover.office_curtain_group"
+                                        },
+                                        {
+                                            "entity": "cover.bedroom_curtain_group"
+                                        },
+                                        {
+                                            "entity": "cover.living_room_curtain_group"
+                                        },
+                                        {
+                                            "entity": "cover.living_room_left_curtain_group"
+                                        },
+                                        {
+                                            "entity": "cover.living_room_right_curtain_group"
+                                        },
+                                        {
+                                            "entity": "cover.balcony_door_curtain_group"
+                                        }
+                                    ],
+                                    "show_header_toggle": false,
+                                    "title": "Blinds",
+                                    "type": "entities"
+                                }
+                            ],
+                            "layout": "vertical",
+                            "type": "custom:layout-card"
+                        }
+                    ],
+                    "icon": "mdi:blinds",
+                    "panel": true
+                },
+                {
+                    "title": "Clock",
+                    "path": "clock",
+                    "panel": false,
+                    "type": "custom:masonry-layout",
+                    "icon": "mdi:alarm",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "type": "entities",
+                            "entities": [
+                                {
+                                    "type": "custom:time-picker-card",
+                                    "entity": "input_datetime.alarmtime_mon",
+                                    "hour_mode": 24,
+                                    "hour_step": 1,
+                                    "minute_step": 5,
+                                    "second_step": 5,
+                                    "name": "Monday",
+                                    "layout": {
+                                        "embedded": true,
+                                        "name": "header",
+                                        "align_controls": "right",
+                                        "link_values": true
+                                    }
                                 },
+                                {
+                                    "type": "custom:time-picker-card",
+                                    "entity": "input_datetime.alarmtime_tue",
+                                    "hour_mode": 24,
+                                    "hour_step": 1,
+                                    "minute_step": 5,
+                                    "second_step": 5,
+                                    "name": "Tuesday",
+                                    "layout": {
+                                        "embedded": true,
+                                        "name": "header",
+                                        "align_controls": "right",
+                                        "link_values": true
+                                    }
+                                },
+                                {
+                                    "type": "custom:time-picker-card",
+                                    "entity": "input_datetime.alarmtime_wed",
+                                    "hour_mode": 24,
+                                    "hour_step": 1,
+                                    "minute_step": 5,
+                                    "second_step": 5,
+                                    "name": "Wednesday",
+                                    "layout": {
+                                        "embedded": true,
+                                        "name": "header",
+                                        "align_controls": "right",
+                                        "link_values": true
+                                    }
+                                },
+                                {
+                                    "type": "custom:time-picker-card",
+                                    "entity": "input_datetime.alarmtime_thu",
+                                    "hour_mode": 24,
+                                    "hour_step": 1,
+                                    "minute_step": 5,
+                                    "second_step": 5,
+                                    "name": "Thursday",
+                                    "layout": {
+                                        "embedded": true,
+                                        "name": "header",
+                                        "align_controls": "right",
+                                        "link_values": true
+                                    }
+                                },
+                                {
+                                    "type": "custom:time-picker-card",
+                                    "entity": "input_datetime.alarmtime_fri",
+                                    "hour_mode": 24,
+                                    "hour_step": 1,
+                                    "minute_step": 5,
+                                    "second_step": 5,
+                                    "name": "Friday",
+                                    "layout": {
+                                        "embedded": true,
+                                        "name": "header",
+                                        "align_controls": "right",
+                                        "link_values": true
+                                    }
+                                },
+                                {
+                                    "type": "custom:time-picker-card",
+                                    "entity": "input_datetime.alarmtime_sat",
+                                    "hour_mode": 24,
+                                    "hour_step": 1,
+                                    "minute_step": 5,
+                                    "second_step": 5,
+                                    "name": "Saturday",
+                                    "layout": {
+                                        "embedded": true,
+                                        "name": "header",
+                                        "align_controls": "right",
+                                        "link_values": true
+                                    }
+                                },
+                                {
+                                    "type": "custom:time-picker-card",
+                                    "entity": "input_datetime.alarmtime_sun",
+                                    "hour_mode": 24,
+                                    "hour_step": 1,
+                                    "minute_step": 5,
+                                    "second_step": 5,
+                                    "name": "Sun",
+                                    "layout": {
+                                        "embedded": true,
+                                        "name": "header",
+                                        "align_controls": "right",
+                                        "link_values": true
+                                    }
+                                },
+                                {
+                                    "entity": "input_boolean.alarmon_mon",
+                                    "name": "Monday",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    }
+                                },
+                                {
+                                    "entity": "input_boolean.alarmon_tue",
+                                    "name": "Tuesday",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    }
+                                },
+                                {
+                                    "entity": "input_boolean.alarmon_wed",
+                                    "name": "Wednesday",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    }
+                                },
+                                {
+                                    "entity": "input_boolean.alarmon_thu",
+                                    "name": "Thursday",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    }
+                                },
+                                {
+                                    "entity": "input_boolean.alarmon_fri",
+                                    "name": "Friday",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    }
+                                },
+                                {
+                                    "entity": "input_boolean.alarmon_sat",
+                                    "name": "Saturday",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    }
+                                },
+                                {
+                                    "entity": "input_boolean.alarmon_sun",
+                                    "name": "Sunday",
+                                    "tap_action": {
+                                        "action": "toggle"
+                                    }
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "state_color": false
+                        }
+                    ]
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "cards": [
                                 {
                                     "compact_view": false,
                                     "entity": "vacuum.rob",
@@ -146,15 +462,252 @@
                             "type": "custom:layout-card"
                         }
                     ],
+                    "icon": "mdi:robot",
                     "panel": true
                 },
                 {
+                    "path": "dev",
+                    "title": "Dev",
+                    "visible": [
+                        {
+                            "user": "c1301244f3344a67bd4268c143d0aacb"
+                        },
+                        {
+                            "user": "f13ebad253d846b7b26c9802a52c66d1"
+                        }
+                    ],
                     "badges": [],
-                    "cards": []
+                    "cards": [
+                        {
+                            "type": "custom:layout-card",
+                            "layout_type": "masonry",
+                            "layout": {},
+                            "cards": [
+                                {
+                                    "type": "vertical-stack",
+                                    "cards": [
+                                        {
+                                            "type": "custom:button-card",
+                                            "entity": "light.all",
+                                            "name": "All Lights",
+                                            "icon": "hass:lightbulb",
+                                            "color_type": "card",
+                                            "default_color": "rgb(255, 233, 155)",
+                                            "tap_action": {
+                                                "action": "call-service",
+                                                "service": "light.turn_off",
+                                                "service_data": {
+                                                    "entity_id": "light.all"
+                                                }
+                                            },
+                                            "style": [
+                                                {
+                                                    "font-size": "12px"
+                                                },
+                                                {
+                                                    "font-weight": "bold"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "horizontal-stack",
+                                    "cards": [
+                                        {
+                                            "type": "vertical-stack",
+                                            "cards": [
+                                                {
+                                                    "type": "custom:button-card",
+                                                    "entity": "light.office_all",
+                                                    "name": "Office",
+                                                    "icon": "mdi:office-building",
+                                                    "color": "auto",
+                                                    "color_type": "card",
+                                                    "default_color": "rgb(255, 233, 155)",
+                                                    "style": [
+                                                        {
+                                                            "font-size": "12px"
+                                                        },
+                                                        {
+                                                            "font-weight": "bold"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "custom:button-card",
+                                                    "entity": "light.office_hallway",
+                                                    "name": "Hallway",
+                                                    "icon": "mdi:lightbulb",
+                                                    "color": "auto",
+                                                    "color_type": "card",
+                                                    "default_color": "rgb(255, 233, 155)",
+                                                    "style": [
+                                                        {
+                                                            "font-size": "12px"
+                                                        },
+                                                        {
+                                                            "font-weight": "bold"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "custom:button-card",
+                                                    "entity": "light.office_main",
+                                                    "name": "Main",
+                                                    "icon": "mdi:lightbulb",
+                                                    "color": "auto",
+                                                    "color_type": "card",
+                                                    "default_color": "rgb(255, 233, 155)",
+                                                    "style": [
+                                                        {
+                                                            "font-size": "12px"
+                                                        },
+                                                        {
+                                                            "font-weight": "bold"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "custom:button-card",
+                                                    "entity": "light.office_bathroom_main",
+                                                    "name": "Bathroom",
+                                                    "icon": "mdi:lightbulb",
+                                                    "color": "auto",
+                                                    "color_type": "card",
+                                                    "default_color": "rgb(255, 233, 155)",
+                                                    "style": [
+                                                        {
+                                                            "font-size": "12px"
+                                                        },
+                                                        {
+                                                            "font-weight": "bold"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "custom:button-card",
+                                                    "entity": "light.office_bathroom_underlight",
+                                                    "name": "Shower",
+                                                    "icon": "mdi:lightbulb",
+                                                    "color": "auto",
+                                                    "color_type": "card",
+                                                    "default_color": "rgb(255, 233, 155)",
+                                                    "style": [
+                                                        {
+                                                            "font-size": "8px"
+                                                        },
+                                                        {
+                                                            "font-weight": "bold"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "vertical-stack",
+                                            "cards": [
+                                                {
+                                                    "type": "custom:button-card",
+                                                    "entity": "light.bedroom_all",
+                                                    "name": "Bedroom",
+                                                    "icon": "mdi:bed",
+                                                    "color": "auto",
+                                                    "color_type": "card",
+                                                    "default_color": "rgb(255, 233, 155)",
+                                                    "style": [
+                                                        {
+                                                            "font-size": "12px"
+                                                        },
+                                                        {
+                                                            "font-weight": "bold"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "light",
+                                                    "entity": "light.bedroom"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "custom:button-card",
+                                            "entity": "light.livingroom_all",
+                                            "name": "Living",
+                                            "icon": "mdi:sofa",
+                                            "color": "auto",
+                                            "color_type": "card",
+                                            "default_color": "rgb(255, 233, 155)",
+                                            "tap_action": {
+                                                "action": "toggle"
+                                            },
+                                            "style": [
+                                                {
+                                                    "font-size": "12px"
+                                                },
+                                                {
+                                                    "font-weight": "bold"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "vertical-stack",
+                                    "cards": [
+                                        {
+                                            "type": "custom:button-card",
+                                            "color_type": "label-card",
+                                            "color": "rgb(44, 109, 214)",
+                                            "name": "Scenes"
+                                        },
+                                        {
+                                            "type": "horizontal-stack",
+                                            "cards": [
+                                                {
+                                                    "type": "custom:button-card",
+                                                    "entity": "switch.kitchen_scene_1",
+                                                    "color_type": "card",
+                                                    "color": "rgb(66, 134, 244)",
+                                                    "icon": "mdi:numeric-1-box-outline"
+                                                },
+                                                {
+                                                    "type": "custom:button-card",
+                                                    "entity": "switch.kitchen_scene_2",
+                                                    "color_type": "card",
+                                                    "color": "rgb(66, 134, 244)",
+                                                    "icon": "mdi:numeric-2-box-outline"
+                                                },
+                                                {
+                                                    "type": "custom:button-card",
+                                                    "entity": "switch.kitchen_scene_3",
+                                                    "color_type": "card",
+                                                    "color": "rgb(66, 134, 244)",
+                                                    "icon": "mdi:numeric-3-box-outline"
+                                                },
+                                                {
+                                                    "type": "custom:button-card",
+                                                    "entity": "switch.kitchen_scene_4",
+                                                    "color_type": "card",
+                                                    "color": "rgb(66, 134, 244)",
+                                                    "icon": "mdi:numeric-4-box-outline"
+                                                },
+                                                {
+                                                    "type": "custom:button-card",
+                                                    "entity": "switch.kitchen_off",
+                                                    "color_type": "card",
+                                                    "color": "rgb(66, 134, 244)",
+                                                    "icon": "mdi:eye-off-outline"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         }
-    },
-    "key": "lovelace",
-    "version": 1
+    }
 }

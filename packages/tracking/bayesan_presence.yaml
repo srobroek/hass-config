@@ -1,6 +1,38 @@
-# binary_sensor:
-# - platform: bayesian
-#   prior: 0.5
+binary_sensor:
+  - platform: bayesian
+    name: "sjors_home"
+    prior: 0.6
+    probability_threshold: 0.9
+    observations:
+      - entity_id: "device_tracker.sr"
+        platform: "state"
+        prob_given_true: 0.8
+        prob_given_false: 0.1
+        to_state: "home"
+      - entity_id: "device_tracker.230"
+        platform: "state"
+        prob_given_true: 0.5
+        prob_given_false: 0.1
+        to_state: "home"
+        
+      
+# proximity:
+#   home:
+#     devices:
+#       - person.sjors_robroek
+#     tolerance: 0
+#     unit_of_measurement: m
+#   work:
+#     devices:
+#       - person.sjors_robroek
+#     tolerance: 0
+#     unit_of_measurement: m
+#   airport:
+#     devices:
+#       - person.sjors_robroek
+#     tolerance: 0
+#     unit_of_measurement: m
+    
 #   name: 'Brad Presence'
 #   probability_threshold: 0.9
 #   observations:
