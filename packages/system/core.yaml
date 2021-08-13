@@ -1,7 +1,7 @@
 # home assistant core configuration
 
 #enable ios frontend
-ios: asdf
+ios:
 
 #enable config UI
 config:
