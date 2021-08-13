@@ -1,7 +1,7 @@
 # home assistant core configuration
 
 #enable ios frontend
-ios:
+ios: asdf
 
 #enable config UI
 config:
@@ -9,16 +9,13 @@ config:
 #Get latest changes
 default_config:
 
-
 #Load person component
 person:
 
-
-
 #set HTTP config
 http:
-#  ssl_certificate: !secret http_fullchain
-#  ssl_key: !secret http_privkey
+  #  ssl_certificate: !secret http_fullchain
+  #  ssl_key: !secret http_privkey
   cors_allowed_origins:
     - https://cast.home-assistant.io
   use_x_forwarded_for: true
@@ -54,4 +51,3 @@ cloud:
 
 frontend:
   themes: !include_dir_merge_named /config/themes
-
