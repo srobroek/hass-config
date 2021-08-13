@@ -279,170 +279,235 @@
                     "title": "Clock",
                     "path": "clock",
                     "panel": false,
-                    "type": "custom:masonry-layout",
                     "icon": "mdi:alarm",
+                    "layout": {},
+                    "type": "custom:horizontal-layout",
                     "badges": [],
                     "cards": [
                         {
-                            "type": "entities",
-                            "entities": [
+                            "type": "vertical-stack",
+                            "cards": [
                                 {
-                                    "type": "custom:time-picker-card",
-                                    "entity": "input_datetime.alarmtime_mon",
-                                    "hour_mode": 24,
-                                    "hour_step": 1,
-                                    "minute_step": 5,
-                                    "second_step": 5,
-                                    "name": "Monday",
-                                    "layout": {
-                                        "embedded": true,
-                                        "name": "header",
-                                        "align_controls": "right",
-                                        "link_values": true
-                                    }
+                                    "type": "horizontal-stack",
+                                    "cards": [
+                                        {
+                                            "type": "custom:button-card",
+                                            "entity": "input_boolean.alarmon_sun",
+                                            "name": "Sun",
+                                            "color_type": "icon",
+                                            "color": "rgb(255, 50, 0)",
+                                            "icon": "mdi:alarm-note",
+                                            "state": [
+                                                {
+                                                    "value": "off",
+                                                    "icon": "mdi:alarm-note-off",
+                                                    "color": "rgb(50, 255, 0)"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "custom:button-card",
+                                            "entity": "input_boolean.alarmon_mon",
+                                            "name": "Mon",
+                                            "color_type": "icon",
+                                            "color": "rgb(255, 50, 0)",
+                                            "icon": "mdi:alarm-note",
+                                            "state": [
+                                                {
+                                                    "value": "off",
+                                                    "icon": "mdi:alarm-note-off",
+                                                    "color": "rgb(50, 255, 0)"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "custom:button-card",
+                                            "entity": "input_boolean.alarmon_tue",
+                                            "name": "Tue",
+                                            "color_type": "icon",
+                                            "color": "rgb(255, 50, 0)",
+                                            "icon": "mdi:alarm-note",
+                                            "state": [
+                                                {
+                                                    "value": "off",
+                                                    "icon": "mdi:alarm-note-off",
+                                                    "color": "rgb(50, 255, 0)"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "custom:button-card",
+                                            "entity": "input_boolean.alarmon_wed",
+                                            "name": "Wed",
+                                            "color_type": "icon",
+                                            "color": "rgb(255, 50, 0)",
+                                            "icon": "mdi:alarm-note",
+                                            "state": [
+                                                {
+                                                    "value": "off",
+                                                    "icon": "mdi:alarm-note-off",
+                                                    "color": "rgb(50, 255, 0)"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "custom:button-card",
+                                            "entity": "input_boolean.alarmon_thu",
+                                            "name": "Thu",
+                                            "color_type": "icon",
+                                            "color": "rgb(255, 50, 0)",
+                                            "icon": "mdi:alarm-note",
+                                            "state": [
+                                                {
+                                                    "value": "off",
+                                                    "icon": "mdi:alarm-note-off",
+                                                    "color": "rgb(50, 255, 0)"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "custom:button-card",
+                                            "entity": "input_boolean.alarmon_fri",
+                                            "name": "Fri",
+                                            "color_type": "icon",
+                                            "color": "rgb(255, 50, 0)",
+                                            "icon": "mdi:alarm-note",
+                                            "state": [
+                                                {
+                                                    "value": "off",
+                                                    "icon": "mdi:alarm-note-off",
+                                                    "color": "rgb(50, 255, 0)"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "custom:button-card",
+                                            "entity": "input_boolean.alarmon_sat",
+                                            "name": "Sat",
+                                            "color_type": "icon",
+                                            "color": "rgb(255, 50, 0)",
+                                            "icon": "mdi:alarm-note",
+                                            "state": [
+                                                {
+                                                    "value": "off",
+                                                    "icon": "mdi:alarm-note-off",
+                                                    "color": "rgb(50, 255, 0)"
+                                                }
+                                            ]
+                                        }
+                                    ]
                                 },
                                 {
-                                    "type": "custom:time-picker-card",
-                                    "entity": "input_datetime.alarmtime_tue",
-                                    "hour_mode": 24,
-                                    "hour_step": 1,
-                                    "minute_step": 5,
-                                    "second_step": 5,
-                                    "name": "Tuesday",
-                                    "layout": {
-                                        "embedded": true,
-                                        "name": "header",
-                                        "align_controls": "right",
-                                        "link_values": true
-                                    }
-                                },
-                                {
-                                    "type": "custom:time-picker-card",
-                                    "entity": "input_datetime.alarmtime_wed",
-                                    "hour_mode": 24,
-                                    "hour_step": 1,
-                                    "minute_step": 5,
-                                    "second_step": 5,
-                                    "name": "Wednesday",
-                                    "layout": {
-                                        "embedded": true,
-                                        "name": "header",
-                                        "align_controls": "right",
-                                        "link_values": true
-                                    }
-                                },
-                                {
-                                    "type": "custom:time-picker-card",
-                                    "entity": "input_datetime.alarmtime_thu",
-                                    "hour_mode": 24,
-                                    "hour_step": 1,
-                                    "minute_step": 5,
-                                    "second_step": 5,
-                                    "name": "Thursday",
-                                    "layout": {
-                                        "embedded": true,
-                                        "name": "header",
-                                        "align_controls": "right",
-                                        "link_values": true
-                                    }
-                                },
-                                {
-                                    "type": "custom:time-picker-card",
-                                    "entity": "input_datetime.alarmtime_fri",
-                                    "hour_mode": 24,
-                                    "hour_step": 1,
-                                    "minute_step": 5,
-                                    "second_step": 5,
-                                    "name": "Friday",
-                                    "layout": {
-                                        "embedded": true,
-                                        "name": "header",
-                                        "align_controls": "right",
-                                        "link_values": true
-                                    }
-                                },
-                                {
-                                    "type": "custom:time-picker-card",
-                                    "entity": "input_datetime.alarmtime_sat",
-                                    "hour_mode": 24,
-                                    "hour_step": 1,
-                                    "minute_step": 5,
-                                    "second_step": 5,
-                                    "name": "Saturday",
-                                    "layout": {
-                                        "embedded": true,
-                                        "name": "header",
-                                        "align_controls": "right",
-                                        "link_values": true
-                                    }
-                                },
-                                {
-                                    "type": "custom:time-picker-card",
-                                    "entity": "input_datetime.alarmtime_sun",
-                                    "hour_mode": 24,
-                                    "hour_step": 1,
-                                    "minute_step": 5,
-                                    "second_step": 5,
-                                    "name": "Sun",
-                                    "layout": {
-                                        "embedded": true,
-                                        "name": "header",
-                                        "align_controls": "right",
-                                        "link_values": true
-                                    }
-                                },
-                                {
-                                    "entity": "input_boolean.alarmon_mon",
-                                    "name": "Monday",
-                                    "tap_action": {
-                                        "action": "toggle"
-                                    }
-                                },
-                                {
-                                    "entity": "input_boolean.alarmon_tue",
-                                    "name": "Tuesday",
-                                    "tap_action": {
-                                        "action": "toggle"
-                                    }
-                                },
-                                {
-                                    "entity": "input_boolean.alarmon_wed",
-                                    "name": "Wednesday",
-                                    "tap_action": {
-                                        "action": "toggle"
-                                    }
-                                },
-                                {
-                                    "entity": "input_boolean.alarmon_thu",
-                                    "name": "Thursday",
-                                    "tap_action": {
-                                        "action": "toggle"
-                                    }
-                                },
-                                {
-                                    "entity": "input_boolean.alarmon_fri",
-                                    "name": "Friday",
-                                    "tap_action": {
-                                        "action": "toggle"
-                                    }
-                                },
-                                {
-                                    "entity": "input_boolean.alarmon_sat",
-                                    "name": "Saturday",
-                                    "tap_action": {
-                                        "action": "toggle"
-                                    }
-                                },
-                                {
-                                    "entity": "input_boolean.alarmon_sun",
-                                    "name": "Sunday",
-                                    "tap_action": {
-                                        "action": "toggle"
-                                    }
+                                    "type": "vertical-stack",
+                                    "cards": [
+                                        {
+                                            "type": "custom:time-picker-card",
+                                            "entity": "input_datetime.alarmtime_sun",
+                                            "hour_mode": 24,
+                                            "hour_step": 1,
+                                            "minute_step": 5,
+                                            "second_step": 5,
+                                            "name": "Sunday",
+                                            "layout": {
+                                                "embedded": true,
+                                                "name": "inside",
+                                                "align_controls": "center",
+                                                "link_values": true
+                                            }
+                                        },
+                                        {
+                                            "type": "custom:time-picker-card",
+                                            "entity": "input_datetime.alarmtime_mon",
+                                            "hour_mode": 24,
+                                            "hour_step": 1,
+                                            "minute_step": 5,
+                                            "second_step": 5,
+                                            "name": "Monday",
+                                            "layout": {
+                                                "embedded": true,
+                                                "name": "inside",
+                                                "align_controls": "center",
+                                                "link_values": true
+                                            }
+                                        },
+                                        {
+                                            "type": "custom:time-picker-card",
+                                            "entity": "input_datetime.alarmtime_tue",
+                                            "hour_mode": 24,
+                                            "hour_step": 1,
+                                            "minute_step": 5,
+                                            "second_step": 5,
+                                            "name": "Tuesday",
+                                            "layout": {
+                                                "embedded": true,
+                                                "name": "inside",
+                                                "align_controls": "center",
+                                                "link_values": true
+                                            }
+                                        },
+                                        {
+                                            "type": "custom:time-picker-card",
+                                            "entity": "input_datetime.alarmtime_wed",
+                                            "hour_mode": 24,
+                                            "hour_step": 1,
+                                            "minute_step": 5,
+                                            "second_step": 5,
+                                            "name": "Wednesday",
+                                            "layout": {
+                                                "embedded": true,
+                                                "name": "inside",
+                                                "align_controls": "center",
+                                                "link_values": true
+                                            }
+                                        },
+                                        {
+                                            "type": "custom:time-picker-card",
+                                            "entity": "input_datetime.alarmtime_thu",
+                                            "hour_mode": 24,
+                                            "hour_step": 1,
+                                            "minute_step": 5,
+                                            "second_step": 5,
+                                            "name": "Thursday",
+                                            "layout": {
+                                                "embedded": true,
+                                                "name": "inside",
+                                                "align_controls": "center",
+                                                "link_values": true
+                                            }
+                                        },
+                                        {
+                                            "type": "custom:time-picker-card",
+                                            "entity": "input_datetime.alarmtime_fri",
+                                            "hour_mode": 24,
+                                            "hour_step": 1,
+                                            "minute_step": 5,
+                                            "second_step": 5,
+                                            "name": "Friday",
+                                            "layout": {
+                                                "embedded": true,
+                                                "name": "inside",
+                                                "align_controls": "center",
+                                                "link_values": true
+                                            }
+                                        },
+                                        {
+                                            "type": "custom:time-picker-card",
+                                            "entity": "input_datetime.alarmtime_sat",
+                                            "hour_mode": 24,
+                                            "hour_step": 1,
+                                            "minute_step": 5,
+                                            "second_step": 5,
+                                            "name": "Saturday",
+                                            "layout": {
+                                                "embedded": true,
+                                                "name": "inside",
+                                                "align_controls": "center",
+                                                "link_values": true
+                                            }
+                                        }
+                                    ]
                                 }
-                            ],
-                            "show_header_toggle": false,
-                            "state_color": false
+                            ]
                         }
                     ]
                 },
