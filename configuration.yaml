@@ -1,4 +1,15 @@
 homeassistant:
   customize: !include customize.yaml
   packages: !include_dir_named packages
+  auth_providers:
+    - type: homeassistant
+    - type: trusted_networks
+      trusted_networks:
+        - 172.20.14.80
+      trusted_users:
+        172.20.14.80: 35953009fd4d4cf2aebab2650588f9f3
+      allow_bypass_login: true
 
+spotcast:
+  sp_dc: !secret spotcast_sp_dc
+  sp_key: !secret spotcast_sp_key

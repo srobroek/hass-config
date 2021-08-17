@@ -6,7 +6,7 @@
             {
                 "id": "4184a08ec39249f5a1bc5a2442dc4fe5",
                 "type": "module",
-                "url": "/hacsfiles/vacuum-card/vacuum-card.js?hacstag=2612912951226"
+                "url": "/hacsfiles/vacuum-card/vacuum-card.js?hacstag=2612912951230"
             },
             {
                 "id": "a0a3ae4f123c4ce88667521defe8afa1",
@@ -16,7 +16,7 @@
             {
                 "id": "59fe261abf6f44589834470cc047beba",
                 "type": "module",
-                "url": "/hacsfiles/light-entity-card/light-entity-card.js"
+                "url": "/hacsfiles/light-entity-card/light-entity-card.js?hacstag=168744428444"
             },
             {
                 "id": "19ce7631c3024af48225f8651864582d",
@@ -44,12 +44,12 @@
                 "id": "ac5d979724b54a069681caee2f190e4c"
             },
             {
-                "url": "/hacsfiles/atomic-calendar-revive/atomic-calendar-revive.js?hacstag=246549747442",
+                "url": "/hacsfiles/atomic-calendar-revive/atomic-calendar-revive.js?hacstag=246549747450",
                 "type": "module",
                 "id": "14e92425b0bb4e5bab2c76b32be37398"
             },
             {
-                "url": "/hacsfiles/lovelace-roomba-vacuum-card/roomba-vacuum-card.js?hacstag=238802974010",
+                "url": "/hacsfiles/lovelace-roomba-vacuum-card/roomba-vacuum-card.js?hacstag=238802974011",
                 "type": "module",
                 "id": "f468646b697845bb93c27c2681b70814"
             },
@@ -59,7 +59,7 @@
                 "id": "93c0a2c568194d8f9148795ee8a8852f"
             },
             {
-                "url": "/hacsfiles/purifier-card/purifier-card.js?hacstag=274738925090",
+                "url": "/hacsfiles/purifier-card/purifier-card.js?hacstag=2747389250103",
                 "type": "module",
                 "id": "f27fd1e60bc34c05a5f5066a26b54196"
             },
@@ -69,12 +69,12 @@
                 "id": "2e008858d3444bfa86c138eff92335b9"
             },
             {
-                "url": "/hacsfiles/ha-floorplan/floorplan.js?hacstag=1883234941024",
+                "url": "/hacsfiles/ha-floorplan/floorplan.js?hacstag=1883234941027",
                 "type": "module",
                 "id": "c1f905eb5d204742a0c799bded157499"
             },
             {
-                "url": "/hacsfiles/PlexMeetsHomeAssistant/plex-meets-homeassistant.js?hacstag=363428919113",
+                "url": "/hacsfiles/PlexMeetsHomeAssistant/plex-meets-homeassistant.js?hacstag=36342891921",
                 "type": "module",
                 "id": "b8df992baa7e4a5da8cf77f77e8cd15b"
             },
@@ -89,7 +89,7 @@
                 "id": "7a1671fa3d3642d58671b8470d0f1aa7"
             },
             {
-                "url": "/hacsfiles/lovelace-paper-buttons-row/paper-buttons-row.js?hacstag=244872232050",
+                "url": "/hacsfiles/lovelace-paper-buttons-row/paper-buttons-row.js?hacstag=244872232060",
                 "type": "module",
                 "id": "180d3bbe65d843fda05d0f7a952067ef"
             },
@@ -97,6 +97,16 @@
                 "url": "/hacsfiles/lovelace-fold-entity-row/fold-entity-row.js?hacstag=1507819942004",
                 "type": "module",
                 "id": "58d01511b997458885563da10dde373a"
+            },
+            {
+                "url": "/hacsfiles/spotify-card/spotify-card.js?hacstag=173955605240",
+                "type": "module",
+                "id": "fc65458dec43487b9c5877d6bde324b7"
+            },
+            {
+                "url": "/hacsfiles/kiosk-mode/kiosk-mode.js?hacstag=303101606171",
+                "type": "module",
+                "id": "ff34493920904f8b98d63e308bc2b59f"
             }
         ]
     }

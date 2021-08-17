@@ -1,1 +1,18 @@
-# here to keep the UI happy
+- id: '1629012269958'
+  alias: Cast to Google Hub
+  description: ''
+  use_blueprint:
+    path: kind3r/cast-and-re-cast-a-lovelace-view-to-a-google-hub.yaml
+    input:
+      dashboard: lovelace
+      player: media_player.bedroom_display
+      view: dev
+- id: '1629012290387'
+  alias: Cast to Google Hub
+  description: ''
+  use_blueprint:
+    path: kind3r/cast-and-re-cast-a-lovelace-view-to-a-google-hub.yaml
+    input:
+      dashboard: lovelace
+      view: dev
+      player: media_player.bedroom_display

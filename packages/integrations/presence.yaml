@@ -1,0 +1,43 @@
+group:
+  people_status:
+    entities:
+      - sensor.sjors_status
+      - sensor.anelise_status
+
+sensor:
+  - platform: template
+    sensors:
+      sjors_status:
+        friendly_name: "Sjors Home?"
+        value_template: "{{states.input_select.homestate_sjors_robroek.state}}"
+      anelise_status:
+        friendly_name: "Anelise Home?"
+        value_template: "{{states.input_select.homestate_anelise_rezende_de_moraes.state}}"
+
+      people_home_count:
+        friendly_name: "How many people are home?"
+        value_template: "{{ expand(['group.people_status']) | selectattr('state', 'match', '(Home)|(Just Arrived)') | list | count }}"
+      people_away_count:
+        friendly_name: "How many people are away?"
+        value_template: "{{ expand(['group.people_status']) | selectattr('state', 'match', '(Away)|(Just Left)') | list | count }}"
+      people_extended_away_count:
+        friendly_name: "How many people are extended away?"
+        value_template: "{{ expand(['group.people_status']) | selectattr('state', 'match', '(Extended Away)') | list | count }}"
+
+      total_people_count:
+        friendly_name: "How many people live in this house?"
+        value_template: "{{ expand(['group.people_status']) | count }}"
+
+binary_sensor:
+  - platform: template
+    sensors:
+      anyone_home:
+        friendly_name: "Is Anyone Home?"
+        value_template: "{{ states('sensor.people_home_count')}}"
+      everyone_extended_away:
+        friendly_name: "Is everyone extended away?"
+        value_template: "{{states('people_extended_away_count') == states('sensor.total_people_count') }}"
+
+      everyone_home:
+        friendly_name: "Is everyone Home?"
+        value_template: "{{ states('people_home_count') == states('sensor.total_people_count')  }}"

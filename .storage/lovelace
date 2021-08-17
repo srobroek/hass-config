@@ -5,239 +5,9 @@
         "config": {
             "views": [
                 {
-                    "icon": "mdi:lightbulb",
-                    "panel": false,
-                    "type": "custom:grid-layout",
-                    "badges": [],
-                    "cards": [
-                        {
-                            "cards": [
-                                {
-                                    "type": "button",
-                                    "tap_action": {
-                                        "action": "call-service",
-                                        "service": "light.turn_off",
-                                        "service_data": {},
-                                        "target": {
-                                            "entity_id": "light.all"
-                                        }
-                                    },
-                                    "icon": "hass:lightbulb",
-                                    "show_state": true,
-                                    "name": "All Lights",
-                                    "entity": "light.all"
-                                },
-                                {
-                                    "entities": [
-                                        {
-                                            "entity": "group.officelights",
-                                            "type": "custom:binary-control-button-row"
-                                        },
-                                        {
-                                            "entity": "switch.0x680ae2fffe71afaf_switch_right",
-                                            "type": "custom:binary-control-button-row"
-                                        },
-                                        {
-                                            "entity": "switch.0x680ae2fffe71afaf_switch_left",
-                                            "type": "custom:binary-control-button-row"
-                                        }
-                                    ],
-                                    "show_header_toggle": false,
-                                    "type": "entities"
-                                },
-                                {
-                                    "entities": [
-                                        {
-                                            "entity": "group.officebathroomlights",
-                                            "type": "custom:binary-control-button-row"
-                                        },
-                                        {
-                                            "entity": "switch.0x680ae2fffe71b1a2_switch_left",
-                                            "type": "custom:binary-control-button-row"
-                                        },
-                                        {
-                                            "entity": "switch.0x680ae2fffe71b1a2_switch_right",
-                                            "type": "custom:binary-control-button-row"
-                                        }
-                                    ],
-                                    "show_header_toggle": false,
-                                    "type": "entities"
-                                },
-                                {
-                                    "entities": [
-                                        {
-                                            "entity": "group.mainbathroomlights",
-                                            "type": "custom:binary-control-button-row"
-                                        },
-                                        {
-                                            "entity": "switch.0x680ae2fffe71b441_switch_right",
-                                            "type": "custom:binary-control-button-row"
-                                        },
-                                        {
-                                            "entity": "switch.0x680ae2fffe71b441_switch_left",
-                                            "type": "custom:binary-control-button-row"
-                                        }
-                                    ],
-                                    "show_header_toggle": false,
-                                    "type": "entities"
-                                },
-                                {
-                                    "entities": [
-                                        {
-                                            "entity": "group.masterbathroomlights",
-                                            "type": "custom:binary-control-button-row"
-                                        },
-                                        {
-                                            "entity": "switch.0x680ae2fffe71b172_switch_left",
-                                            "type": "custom:binary-control-button-row"
-                                        },
-                                        {
-                                            "entity": "switch.0x680ae2fffe71b172_switch_right",
-                                            "type": "custom:binary-control-button-row"
-                                        }
-                                    ],
-                                    "show_header_toggle": false,
-                                    "type": "entities"
-                                },
-                                {
-                                    "shorten_cards": false,
-                                    "consolidate_entities": false,
-                                    "color_wheel": true,
-                                    "persist_features": true,
-                                    "brightness": true,
-                                    "color_temp": true,
-                                    "white_value": true,
-                                    "color_picker": true,
-                                    "smooth_color_wheel": true,
-                                    "hide_header": false,
-                                    "child_card": false,
-                                    "show_slider_percent": false,
-                                    "full_width_sliders": true,
-                                    "brightness_icon": "weather-sunny",
-                                    "white_icon": "file-word-box",
-                                    "temperature_icon": "thermometer",
-                                    "entity": "light.bedroom",
-                                    "group": true,
-                                    "header": "Bedroom",
-                                    "type": "custom:light-entity-card"
-                                },
-                                {
-                                    "shorten_cards": false,
-                                    "consolidate_entities": true,
-                                    "color_wheel": true,
-                                    "persist_features": true,
-                                    "brightness": true,
-                                    "color_temp": true,
-                                    "white_value": true,
-                                    "color_picker": true,
-                                    "smooth_color_wheel": true,
-                                    "hide_header": false,
-                                    "child_card": false,
-                                    "show_slider_percent": false,
-                                    "full_width_sliders": true,
-                                    "brightness_icon": "weather-sunny",
-                                    "white_icon": "file-word-box",
-                                    "temperature_icon": "thermometer",
-                                    "entity": "light.reading_corner",
-                                    "group": false,
-                                    "header": null,
-                                    "type": "custom:light-entity-card"
-                                },
-                                {
-                                    "shorten_cards": false,
-                                    "consolidate_entities": false,
-                                    "color_wheel": true,
-                                    "persist_features": true,
-                                    "brightness": true,
-                                    "color_temp": true,
-                                    "white_value": true,
-                                    "color_picker": true,
-                                    "smooth_color_wheel": true,
-                                    "hide_header": false,
-                                    "child_card": false,
-                                    "show_slider_percent": false,
-                                    "full_width_sliders": true,
-                                    "brightness_icon": "weather-sunny",
-                                    "white_icon": "file-word-box",
-                                    "temperature_icon": "thermometer",
-                                    "entity": "light.bookcase",
-                                    "group": true,
-                                    "header": "Bookcase",
-                                    "type": "custom:light-entity-card"
-                                }
-                            ],
-                            "type": "custom:layout-card",
-                            "layout_type": "masonry"
-                        }
-                    ]
-                },
-                {
-                    "badges": [],
-                    "cards": [
-                        {
-                            "cards": [
-                                {
-                                    "entities": [
-                                        {
-                                            "entity": "fan.mi_air_purifier_3h_bedroom",
-                                            "name": "Bedroom",
-                                            "tap_action": {
-                                                "action": "call-service",
-                                                "service": "fan.toggle",
-                                                "service_data": {
-                                                    "entity_id": "fan.mi_air_purifier_3h_bedroom"
-                                                }
-                                            }
-                                        },
-                                        {
-                                            "entity": "sensor.mi_air_purifier_temp_bedroom"
-                                        },
-                                        {
-                                            "entity": "sensor.mi_air_purifier_humidity_bedroom"
-                                        },
-                                        {
-                                            "entity": "sensor.mi_air_purifier_air_quality_pm25_bedroom"
-                                        },
-                                        {
-                                            "entity": "sensor.mi_air_purifier_avg_air_quality_pm25_bedroom"
-                                        },
-                                        {
-                                            "entity": "fan.mi_air_purifier_3h_livingroom",
-                                            "name": "Living Room",
-                                            "tap_action": {
-                                                "action": "call-service",
-                                                "service": "fan.toggle",
-                                                "service_data": {
-                                                    "entity_id": "fan.mi_air_purifier_3h_livingroom"
-                                                }
-                                            }
-                                        },
-                                        {
-                                            "entity": "sensor.mi_air_purifier_temp_livingroom"
-                                        },
-                                        {
-                                            "entity": "sensor.mi_air_purifier_humidity_livingroom"
-                                        },
-                                        {
-                                            "entity": "sensor.mi_air_purifier_air_quality_pm25_livingroom"
-                                        },
-                                        {
-                                            "entity": "sensor.mi_air_purifier_avg_air_quality_pm25_livingroom"
-                                        }
-                                    ],
-                                    "show_name": true,
-                                    "show_state": true,
-                                    "type": "glance"
-                                }
-                            ],
-                            "layout": "vertical",
-                            "type": "custom:layout-card"
-                        }
-                    ],
-                    "icon": "mdi:fan",
-                    "panel": true
-                },
-                {
+                    "icon": "mdi:blinds",
+                    "type": "panel",
+                    "path": "blinds",
                     "badges": [],
                     "cards": [
                         {
@@ -271,9 +41,7 @@
                             "layout": "vertical",
                             "type": "custom:layout-card"
                         }
-                    ],
-                    "icon": "mdi:blinds",
-                    "panel": true
+                    ]
                 },
                 {
                     "title": "Clock",
@@ -512,6 +280,9 @@
                     ]
                 },
                 {
+                    "icon": "mdi:robot",
+                    "type": "panel",
+                    "path": "vacuum",
                     "badges": [],
                     "cards": [
                         {
@@ -526,12 +297,77 @@
                             "layout": "vertical",
                             "type": "custom:layout-card"
                         }
-                    ],
-                    "icon": "mdi:robot",
-                    "panel": true
+                    ]
                 },
                 {
-                    "path": "dev",
+                    "icon": "mdi:fan",
+                    "type": "panel",
+                    "path": "fans",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "cards": [
+                                {
+                                    "entities": [
+                                        {
+                                            "entity": "fan.mi_air_purifier_3h_bedroom",
+                                            "name": "Bedroom",
+                                            "tap_action": {
+                                                "action": "call-service",
+                                                "service": "fan.toggle",
+                                                "service_data": {
+                                                    "entity_id": "fan.mi_air_purifier_3h_bedroom"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "entity": "sensor.mi_air_purifier_temp_bedroom"
+                                        },
+                                        {
+                                            "entity": "sensor.mi_air_purifier_humidity_bedroom"
+                                        },
+                                        {
+                                            "entity": "sensor.mi_air_purifier_air_quality_pm25_bedroom"
+                                        },
+                                        {
+                                            "entity": "sensor.mi_air_purifier_avg_air_quality_pm25_bedroom"
+                                        },
+                                        {
+                                            "entity": "fan.mi_air_purifier_3h_livingroom",
+                                            "name": "Living Room",
+                                            "tap_action": {
+                                                "action": "call-service",
+                                                "service": "fan.toggle",
+                                                "service_data": {
+                                                    "entity_id": "fan.mi_air_purifier_3h_livingroom"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "entity": "sensor.mi_air_purifier_temp_livingroom"
+                                        },
+                                        {
+                                            "entity": "sensor.mi_air_purifier_humidity_livingroom"
+                                        },
+                                        {
+                                            "entity": "sensor.mi_air_purifier_air_quality_pm25_livingroom"
+                                        },
+                                        {
+                                            "entity": "sensor.mi_air_purifier_avg_air_quality_pm25_livingroom"
+                                        }
+                                    ],
+                                    "show_name": true,
+                                    "show_state": true,
+                                    "type": "glance"
+                                }
+                            ],
+                            "layout": "vertical",
+                            "type": "custom:layout-card"
+                        }
+                    ]
+                },
+                {
+                    "path": "lights",
                     "title": "Dev",
                     "visible": [
                         {
@@ -539,8 +375,12 @@
                         },
                         {
                             "user": "f13ebad253d846b7b26c9802a52c66d1"
+                        },
+                        {
+                            "user": "8cc955cd6d3f4e4c8c746b0a56c0d4b4"
                         }
                     ],
+                    "icon": "mdi:lightbulb",
                     "badges": [],
                     "cards": [
                         {
@@ -565,14 +405,20 @@
                                                     "entity_id": "light.all"
                                                 }
                                             },
-                                            "style": [
-                                                {
-                                                    "font-size": "12px"
-                                                },
-                                                {
-                                                    "font-weight": "bold"
-                                                }
-                                            ]
+                                            "styles": {
+                                                "card": [
+                                                    {
+                                                        "height": "100px"
+                                                    }
+                                                ],
+                                                "name": [
+                                                    {
+                                                        "font-weight": "bold"
+                                                    }
+                                                ]
+                                            },
+                                            "size": "100%",
+                                            "layout": "icon_name"
                                         }
                                     ]
                                 },
@@ -584,88 +430,255 @@
                                             "cards": [
                                                 {
                                                     "type": "custom:button-card",
+                                                    "entity": "light.livingroom_all",
+                                                    "name": "Living room",
+                                                    "icon": "mdi:sofa",
+                                                    "color_type": "card",
+                                                    "styles": {
+                                                        "card": [
+                                                            {
+                                                                "height": "140px"
+                                                            }
+                                                        ],
+                                                        "name": [
+                                                            {
+                                                                "font-weight": "bold"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "size": "100%"
+                                                },
+                                                {
+                                                    "type": "custom:button-card",
+                                                    "color": "grey",
+                                                    "styles": {
+                                                        "card": [
+                                                            {
+                                                                "height": "3px"
+                                                            },
+                                                            {
+                                                                "padding-top": "0px"
+                                                            },
+                                                            {
+                                                                "padding-bottom": "0px"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "color_type": "card"
+                                                },
+                                                {
+                                                    "type": "custom:button-card",
+                                                    "entity": "light.livingroom_entrance",
+                                                    "layout": "icon_name",
+                                                    "styles": {
+                                                        "name": [
+                                                            {
+                                                                "font-size": "12px"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "size": "60%",
+                                                    "name": "Entrance",
+                                                    "color_type": "card"
+                                                },
+                                                {
+                                                    "type": "custom:button-card",
+                                                    "entity": "light.livingroom_underlight",
+                                                    "name": "Underlight",
+                                                    "layout": "icon_name",
+                                                    "size": "60%",
+                                                    "styles": {
+                                                        "name": [
+                                                            {
+                                                                "font-size": "12px"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "color_type": "card"
+                                                },
+                                                {
+                                                    "type": "custom:button-card",
+                                                    "entity": "light.livingroom_front",
+                                                    "name": "Front",
+                                                    "layout": "icon_name",
+                                                    "size": "60%",
+                                                    "styles": {
+                                                        "name": [
+                                                            {
+                                                                "font-size": "12px"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "color_type": "card"
+                                                },
+                                                {
+                                                    "type": "custom:button-card",
+                                                    "entity": "light.livingroom_middle",
+                                                    "name": "Middle",
+                                                    "layout": "icon_name",
+                                                    "size": "60%",
+                                                    "styles": {
+                                                        "name": [
+                                                            {
+                                                                "font-size": "12px"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "color_type": "card"
+                                                },
+                                                {
+                                                    "type": "custom:button-card",
+                                                    "entity": "light.livingroom_back",
+                                                    "name": "Back",
+                                                    "layout": "icon_name",
+                                                    "size": "60%",
+                                                    "styles": {
+                                                        "name": [
+                                                            {
+                                                                "font-size": "12px"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "color_type": "card"
+                                                },
+                                                {
+                                                    "type": "custom:button-card",
+                                                    "entity": "light.reading_corner",
+                                                    "name": "Hue",
+                                                    "styles": {
+                                                        "name": [
+                                                            {
+                                                                "font-size": "12px"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "layout": "icon_name",
+                                                    "size": "60%",
+                                                    "color_type": "card",
+                                                    "double_tap_action": {
+                                                        "action": "more-info"
+                                                    },
+                                                    "color": "auto"
+                                                },
+                                                {
+                                                    "type": "custom:button-card",
+                                                    "entity": "light.bookcase",
+                                                    "name": "Bookcase",
+                                                    "layout": "icon_name",
+                                                    "size": "60%",
+                                                    "styles": {
+                                                        "name": [
+                                                            {
+                                                                "font-size": "12px"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "color_type": "card"
+                                                },
+                                                {
+                                                    "type": "custom:button-card",
+                                                    "entity": "light.bathroom_guest_all",
+                                                    "name": "Bathroom",
+                                                    "icon": "mdi:toilet",
+                                                    "layout": "icon_name",
+                                                    "size": "60%",
+                                                    "styles": {
+                                                        "name": [
+                                                            {
+                                                                "font-size": "12px"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "color_type": "card"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "vertical-stack",
+                                            "cards": [
+                                                {
+                                                    "type": "custom:button-card",
                                                     "entity": "light.office_all",
                                                     "name": "Office",
                                                     "icon": "mdi:office-building",
-                                                    "color": "auto",
                                                     "color_type": "card",
-                                                    "default_color": "rgb(255, 233, 155)",
-                                                    "style": [
-                                                        {
-                                                            "font-size": "12px"
-                                                        },
-                                                        {
-                                                            "font-weight": "bold"
-                                                        }
-                                                    ]
+                                                    "styles": {
+                                                        "card": [
+                                                            {
+                                                                "height": "140px"
+                                                            }
+                                                        ],
+                                                        "name": [
+                                                            {
+                                                                "font-weight": "bold"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "size": "100%"
+                                                },
+                                                {
+                                                    "type": "custom:button-card",
+                                                    "color": "grey",
+                                                    "styles": {
+                                                        "card": [
+                                                            {
+                                                                "height": "3px"
+                                                            },
+                                                            {
+                                                                "padding-top": "0px"
+                                                            },
+                                                            {
+                                                                "padding-bottom": "0px"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "color_type": "card"
                                                 },
                                                 {
                                                     "type": "custom:button-card",
                                                     "entity": "light.office_hallway",
                                                     "name": "Hallway",
-                                                    "icon": "mdi:lightbulb",
-                                                    "color": "auto",
-                                                    "color_type": "card",
-                                                    "default_color": "rgb(255, 233, 155)",
-                                                    "style": [
-                                                        {
-                                                            "font-size": "12px"
-                                                        },
-                                                        {
-                                                            "font-weight": "bold"
-                                                        }
-                                                    ]
+                                                    "layout": "icon_name",
+                                                    "size": "60%",
+                                                    "styles": {
+                                                        "name": [
+                                                            {
+                                                                "font-size": "12px"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "color_type": "card"
                                                 },
                                                 {
                                                     "type": "custom:button-card",
                                                     "entity": "light.office_main",
                                                     "name": "Main",
-                                                    "icon": "mdi:lightbulb",
-                                                    "color": "auto",
-                                                    "color_type": "card",
-                                                    "default_color": "rgb(255, 233, 155)",
-                                                    "style": [
-                                                        {
-                                                            "font-size": "12px"
-                                                        },
-                                                        {
-                                                            "font-weight": "bold"
-                                                        }
-                                                    ]
+                                                    "layout": "icon_name",
+                                                    "size": "60%",
+                                                    "styles": {
+                                                        "name": [
+                                                            {
+                                                                "font-size": "12px"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "color_type": "card"
                                                 },
                                                 {
                                                     "type": "custom:button-card",
-                                                    "entity": "light.office_bathroom_main",
+                                                    "entity": "light.bathroom_office_all",
+                                                    "layout": "icon_name",
+                                                    "size": "60%",
+                                                    "styles": {
+                                                        "name": [
+                                                            {
+                                                                "font-size": "12px"
+                                                            }
+                                                        ]
+                                                    },
                                                     "name": "Bathroom",
-                                                    "icon": "mdi:lightbulb",
-                                                    "color": "auto",
-                                                    "color_type": "card",
-                                                    "default_color": "rgb(255, 233, 155)",
-                                                    "style": [
-                                                        {
-                                                            "font-size": "12px"
-                                                        },
-                                                        {
-                                                            "font-weight": "bold"
-                                                        }
-                                                    ]
-                                                },
-                                                {
-                                                    "type": "custom:button-card",
-                                                    "entity": "light.office_bathroom_underlight",
-                                                    "name": "Shower",
-                                                    "icon": "mdi:lightbulb",
-                                                    "color": "auto",
-                                                    "color_type": "card",
-                                                    "default_color": "rgb(255, 233, 155)",
-                                                    "style": [
-                                                        {
-                                                            "font-size": "8px"
-                                                        },
-                                                        {
-                                                            "font-weight": "bold"
-                                                        }
-                                                    ]
+                                                    "icon": "mdi:shower",
+                                                    "color_type": "card"
                                                 }
                                             ]
                                         },
@@ -677,46 +690,123 @@
                                                     "entity": "light.bedroom_all",
                                                     "name": "Bedroom",
                                                     "icon": "mdi:bed",
-                                                    "color": "auto",
                                                     "color_type": "card",
-                                                    "default_color": "rgb(255, 233, 155)",
-                                                    "style": [
-                                                        {
-                                                            "font-size": "12px"
-                                                        },
-                                                        {
-                                                            "font-weight": "bold"
-                                                        }
-                                                    ]
+                                                    "styles": {
+                                                        "card": [
+                                                            {
+                                                                "height": "140px"
+                                                            }
+                                                        ],
+                                                        "name": [
+                                                            {
+                                                                "font-weight": "bold"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "size": "100%"
                                                 },
                                                 {
-                                                    "type": "light",
-                                                    "entity": "light.bedroom"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "type": "custom:button-card",
-                                            "entity": "light.livingroom_all",
-                                            "name": "Living",
-                                            "icon": "mdi:sofa",
-                                            "color": "auto",
-                                            "color_type": "card",
-                                            "default_color": "rgb(255, 233, 155)",
-                                            "tap_action": {
-                                                "action": "toggle"
-                                            },
-                                            "style": [
-                                                {
-                                                    "font-size": "12px"
+                                                    "type": "custom:button-card",
+                                                    "color": "grey",
+                                                    "styles": {
+                                                        "card": [
+                                                            {
+                                                                "height": "3px"
+                                                            },
+                                                            {
+                                                                "padding-top": "0px"
+                                                            },
+                                                            {
+                                                                "padding-bottom": "0px"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "color_type": "card"
                                                 },
                                                 {
-                                                    "font-weight": "bold"
+                                                    "type": "custom:button-card",
+                                                    "entity": "light.bedroom_entrance",
+                                                    "name": "Entrance",
+                                                    "layout": "icon_name",
+                                                    "size": "60%",
+                                                    "styles": {
+                                                        "name": [
+                                                            {
+                                                                "font-size": "12px"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "color_type": "card"
+                                                },
+                                                {
+                                                    "type": "custom:button-card",
+                                                    "entity": "light.bedroom_main",
+                                                    "name": "Main",
+                                                    "layout": "icon_name",
+                                                    "size": "60%",
+                                                    "styles": {
+                                                        "name": [
+                                                            {
+                                                                "font-size": "12px"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "color_type": "card"
+                                                },
+                                                {
+                                                    "type": "custom:button-card",
+                                                    "entity": "light.bedroom",
+                                                    "name": "Hue",
+                                                    "layout": "icon_name",
+                                                    "size": "60%",
+                                                    "styles": {
+                                                        "name": [
+                                                            {
+                                                                "font-size": "12px"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "color_type": "card",
+                                                    "double_tap_action": {
+                                                        "action": "more-info"
+                                                    },
+                                                    "color": "auto"
+                                                },
+                                                {
+                                                    "type": "custom:button-card",
+                                                    "entity": "light.bathroom_master_all",
+                                                    "name": "Bathroom",
+                                                    "icon": "mdi:shower",
+                                                    "layout": "icon_name",
+                                                    "size": "60%",
+                                                    "styles": {
+                                                        "name": [
+                                                            {
+                                                                "font-size": "12px"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "color_type": "card"
                                                 }
                                             ]
                                         }
                                     ]
-                                },
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Scenes",
+                    "path": "scenes",
+                    "icon": "mdi:palette",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "type": "custom:layout-card",
+                            "layout_type": "masonry",
+                            "layout": {},
+                            "cards": [
                                 {
                                     "type": "vertical-stack",
                                     "cards": [
@@ -724,7 +814,37 @@
                                             "type": "custom:button-card",
                                             "color_type": "label-card",
                                             "color": "rgb(44, 109, 214)",
-                                            "name": "Scenes"
+                                            "name": "Vacation mode",
+                                            "entity": "input_boolean.toggle_vacation",
+                                            "state": [
+                                                {
+                                                    "value": "on",
+                                                    "color": "red",
+                                                    "styles": {
+                                                        "card": [
+                                                            {
+                                                                "animation": "blink 2s ease infinite"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "icon": "mdi:airplane-takeoff"
+                                                },
+                                                {
+                                                    "value": "off",
+                                                    "color": "green",
+                                                    "icon": "mdi:airplane-off"
+                                                }
+                                            ],
+                                            "lock": {
+                                                "enabled": "[[[ return entity.state === `off`; ]]]",
+                                                "unlock": "hold"
+                                            }
+                                        },
+                                        {
+                                            "type": "custom:button-card",
+                                            "color_type": "label-card",
+                                            "color": "rgb(44, 109, 214)",
+                                            "name": "Kitchen"
                                         },
                                         {
                                             "type": "horizontal-stack",
@@ -768,6 +888,55 @@
                                         }
                                     ]
                                 }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "DEV",
+                    "path": "dev",
+                    "visible": [
+                        {
+                            "user": "c1301244f3344a67bd4268c143d0aacb"
+                        },
+                        {
+                            "user": "f13ebad253d846b7b26c9802a52c66d1"
+                        }
+                    ],
+                    "badges": [],
+                    "cards": [
+                        {
+                            "type": "entities",
+                            "entities": [
+                                "group.alllights"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Scheduler",
+                    "path": "scheduler",
+                    "icon": "mdi:calendar",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "type": "custom:scheduler-card",
+                            "discover_existing": true,
+                            "time_step": 5,
+                            "include": [
+                                "automation",
+                                "cover",
+                                "fan",
+                                "group",
+                                "input_boolean",
+                                "light",
+                                "lock",
+                                "media_player",
+                                "notify",
+                                "switch",
+                                "sensor",
+                                "binary_sensor",
+                                "xiaomi_miio"
                             ]
                         }
                     ]
